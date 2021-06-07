@@ -1,0 +1,52 @@
+    <!--Header-->  
+    <header>
+        <div class="headerContainer">
+            <div class = "logo"> </div>
+            <div class ="homepage"><a href = "{{ '/'|url }}">YShiuan_C</a>
+                <span class="tooltip">Homepage</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- currently -->
+        <div class="currently">
+            <div class="info">
+                <p>Hi Hi</p>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="mode">
+            <button id="mode-button" class="mode-button" onclick="mode()">Light Mode</button>
+        </div>
+        
+
+        
+    <!--nav-->
+    <nav>
+        <ul id="navbar">
+            <li class="logo"><a href="{{ '/'|url }}">YShiuan_C</a></li>
+            {% for href, title in [ ['/about-me', 'About me'], ['/resume', 'Resume'], ['/portfolio', 'Portfolio'], ['/contact', 'Contact'] ] %}
+            <li class="item">
+                <a href="{{ href|url }}">{{ title }}</a>
+            </li>
+            {% endfor %}
+            <!-- , ['/blog', 'Blog']
+            <li class="item"><a href="aboutme.html">About me</a></li>
+            <li class="item"><a href="template/resume.html">Resume</a></li>
+            <li class="item"><a href="template/portfolio.html">Portfolio</a></li>
+            -->
+            <!-- 
+            <li class="item"><a style="display:none" href="template/blog.html">Blog</a></li>
+            -->
+            <!--
+            <li class="item"><a href="template/contact.html">Contact</a></li>
+            -->
+            <li class="navbarToggle"><a href="#!"><i class="material-icons">menu</i></a></li> 
+        </ul>
+    </nav>
+
+  
+
+
+    

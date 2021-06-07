@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="urf-8">
+
+<head>
+  <meta name="title" content="{{ this.title }} | Ying-Shiuan Chen" />
+  <meta name="author" content="Ying-Shiuan Chen" />
+  <meta name="copyright" content="Ying-Shiuan Chen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ this.metadesc }}">
+  <meta name="keywords" content="{{this.keywords}}">
+  <link rel="stylesheet" href="{{ '../../static/style.css'|url }}">
+  <link rel="canonical" href="{{'.'|url(external=true)}}" />
+  <!--This is title of website /tab/ -->
+  <title>{% block title %}{{ this.title }}{% endblock %} | YShiuan_C</title>
+  <!-- Logo on the Tab  -->
+  <link rel="icon" sizes="16x16" type="image/png" href="{{'../../static/logo/YShiuan_C_16x16.png'| url }}">
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/03192cca0c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <!--SEO-->
+  <meta property='og:title' content="{{ this.title }} | Ying-Shiuan Chen"/>
+  <meta property='og:image' content="{{'.'|url(external=true)}}{{ this.image }}"/>
+  <meta property='og:description' content="{{ this.metadesc }}"/>
+  <meta property='og:url' content="{{'.'|url(external=true)}}" />
+
+  <!--404-->
+  <link rel="stylesheet" href="{{ '/static/style.min.css'| asseturl }}">
+  <link rel="icon" sizes="16x16" type="image/png" href="{{'/static/logo/YShiuan_C_16x16.png'| asseturl }}">
+
+  {% block head%}
+  {%endblock%}
+
+</head>
+
