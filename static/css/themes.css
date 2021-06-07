@@ -1,0 +1,68 @@
+:root{
+    --text-color: #707070;
+    --text-hover: black;
+    --text-descript:#C2C2C2;
+    --text-message:#e6e6e6;
+    --boder-color:white;
+    --caption-color:#2C2C2E;
+    --work-backgorund: rgba(242, 242, 242, .2);
+}
+
+
+/* font color */
+html{
+    font-family: 'DM Mono', monospace;
+    font-size:16px; 
+}
+
+
+/* 
+*************
+Theme
+*************
+*/
+/* theme */
+body {
+    background-color: white;
+    --text-color: #707070;
+    --text-hover: black;
+    --boder-color:white;
+}
+  
+
+/* system color */
+body.dark-theme {
+    background-color: black;
+    --text-color: #C2C2C2;
+    --text-descript:#707070;
+    --text-hover: #707070;
+    --text-message:#3a3a3c;
+    --boder-color:black;
+    --caption-color:#e6e6e6;
+    --work-backgorund: rgba(242, 242, 242, .1);
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body { 
+        background-color: black;
+        --text-color: #C2C2C2;
+        --text-descript:#707070;
+        --text-hover: #707070;
+        --boder-color:black;
+        --text-message:#3a3a3c;
+        --caption-color:#e6e6e6;
+        --work-backgorund: rgba(242, 242, 242, .1);
+    }
+
+    body.light-theme {
+        background-color: white;
+        --text-color: #707070;
+        --text-descript:#C2C2C2;
+        --text-hover: black;
+        --text-message:#e6e6e6;
+        --boder-color:white;
+        --caption-color:#2C2C2E;
+        --work-backgorund: rgba(242, 242, 242, .2);
+    }
+}
